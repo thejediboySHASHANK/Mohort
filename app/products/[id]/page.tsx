@@ -7,6 +7,7 @@ import {Product} from "@/types";
 import {formatNumber} from "@/lib/utils";
 import PriceInfoCard from "@/components/PriceInfoCard";
 import ProductCard from "@/components/ProductCard";
+import Modal from "@/components/Modal";
 
 interface Props {
     params: {id: string},
@@ -168,9 +169,10 @@ const ProductDetails = async ({params : {id}} : Props) => {
                                 borderColor="#BEFFC5"
                             />
                         </div>
+                        <Modal />
+
                     </div>
 
-                    Modal
                 </div>
             </div>
 
